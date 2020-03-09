@@ -1,0 +1,146 @@
+<!--
+  Laboratoire 2 : familiarisation avec CSS (Solution)
+  Noms          : Pierre Coutu
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Labo 2</title>
+	<meta  charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../css/Labo2_solution.css"/>
+</head>
+<body>
+	<!-- ************** Entête ************** -->
+	<div class="entete">
+		<img class="gauche" src="../images/logo_ligue.png" alt="logo" height="80" />
+		<h1 class="droite">Ligue de soccer métropolitaine</h1>
+	</div>
+
+	<!-- ************** Menu ************** -->
+	<div class="menu">
+		<div class="menu-item menu-item-selectionne">accueil</div>
+		<div class="menu-item">se connecter</div>
+		<div class="menu-item">voir matchs</div>
+		<div class="menu-item">	<a href="https://www.impactmontreal.com/" target="_blank">impact</a></div>
+	</div>
+	
+	<!-- ************** Contenu principal ************** -->
+	<div class="milieu milieu-bg">
+		<!-- ***Contenu#1 *** -->
+		<div class="contenu">
+			<h2>Présentation</h2>
+			<p class="indentation">
+				La ligue de soccer métropolitaine est en opération depuis 2003 et compte à présent 4 équipes et plus de 60 joueurs.
+			</p>
+			<p class="indentation">
+				Chaque équipe dispute 20 matchs de saison régulière. À la fin de la saison, les 2 meilleures équipes 
+				au classement général s'affontent dans un format de matchs aller-retour dans le but de remporter
+				la coupe LSM. 
+			</p>
+		</div>
+		<!-- ***Contenu#2 *** -->
+		<div class="contenu">
+			<h2>Les derniers gagnants de la coupe</h2>
+			<div class="indentation">
+				<ol  reversed="reversed" start="2019">
+					<li>Blaireaux de Blainville</li>
+					<li>Carcajous de Carignan</li>
+					<li>Blaireaux de Blainville</li>
+					<li>Lions de Laval</li>
+					<li>Lions de Laval</li>
+					<li>Marmottes de Montréal</li>
+				</ol>
+			</div>
+		</div>
+		<!-- ***Contenu#3 *** -->
+		<div class="contenu">
+			<h2>Classement actuel</h2>
+			<div class="indentation">
+				<table  >
+					<thead>
+						<tr>
+							<th></th>
+							<th>Parties<br/>Jouées</th>
+							<th>Victoires</th>
+							<th>Défaites</th>
+							<th>Nulles</th>
+							<th>Points</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Marmottes</th>
+							<td>8</td>
+							<td>6</td>
+							<td>1</td>
+							<td>1</td>
+							<td>19</td>
+						</tr>
+						<tr>
+							<th>Lions</th>
+							<td>8</td>
+							<td>4</td>
+							<td>2</td>
+							<td>2</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<th>Carcajous</th>
+							<td>8</td>
+							<td>3</td>
+							<td>4</td>
+							<td>1</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<th>Blaireaux</th>
+							<td>8</td>
+							<td>1</td>
+							<td>7</td>
+							<td>0</td>
+							<td>3</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- ***Contenu#4 *** -->
+		<div class="contenu">
+			<h2>Recherche de matchs</h2>
+			<div class="indentation">
+				<form method="get" action="https://www.w3schools.com/action_page.php" target="_blank">
+					
+					<div class="rangee-formulaire">
+						<label for="equipe">Lieu : </label>
+						<input type="radio" id="domicile" name="lieu" value="domicile" checked="checked" />
+						<label for="domicile">À domicile</label>
+						<input type="radio" id="etranger" name="lieu" value="etranger" />
+						<label for="etranger">À l'étranger</label>
+					</div>
+					
+					<div class="rangee-formulaire">
+						<label for="equipe">Equipe: </label>
+						<input type="text" id="equipe" name="equipe" placeholder="nom de l'équipe" required="required" /><br />
+					</div>
+
+					<div class="rangee-formulaire">
+						<input class="bouton-formulaire" type="submit" value="Recherchez" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- ************** Pied de page ************** -->
+	<div class="pied">
+		<a class="gauche" id="validateur" href="https://validator.w3.org/#validate_by_upload" target="_blank">
+			<img src="../images/w3c.png" alt="validation" height="40" />
+		</a>
+		<h3 class="gauche indentation">
+			Validation
+		</h3>
+		<h3 class="droite">
+			Fait par Pierre Coutu (Hiver 2020)
+		</h3>
+	</div>
+</body>
+</html>

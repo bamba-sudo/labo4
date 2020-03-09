@@ -1,0 +1,128 @@
+<!--
+  Laboratoire 1 : familiarisation avec HTML (Solution)
+  Noms          : Pierre Coutu
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Labo 1</title>
+	<meta  charset="UTF-8" />
+	<style>
+		div {
+			border-left:2px red solid;
+			margin:5px;
+			padding-left:10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="../images/logo_ligue.png" alt="logo" height="80" />
+		<h1>Ligue de soccer métropolitaine</h1>
+		
+		<div>accueil</div>
+		<div>se connecter</div>
+		<div>voir matchs</div>
+		<div><a href="https://www.impactmontreal.com/" target="_blank">impact</a></div>
+	</div>
+	<div>
+		<h2>Introduction</h2>
+		<div>
+			<p>
+				La ligue de soccer métropolitaine est en opération depuis 2003 et compte à présent 4 équipes et plus de 60 joueurs.
+			</p>
+			<p>
+				Chaque équipe dispute 20 matchs de saison régulière. À la fin de la saison, les 2 meilleures équipes 
+				au classement général s'affontent dans un format de matchs aller-retour dans le but de remporter
+				la coupe LSM. 
+			</p>
+		</div>
+		<h2>Les derniers gagnants de la coupe</h2>
+		<div>
+			<ol reversed="reversed" start="2019">
+				<li>Blaireaux de Blainville</li>
+				<li>Carcajous de Carignan</li>
+				<li>Blaireaux de Blainville</li>
+				<li>Lions de Laval</li>
+				<li>Lions de Laval</li>
+				<li>Marmottes de Montréal</li>
+			</ol>
+		</div>
+		<h2>Classement actuel</h2>
+		<div>
+			<table style="">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Parties<br/>Jouées</th>
+						<th>Victoires</th>
+						<th>Défaites</th>
+						<th>Nulles</th>
+						<th>Points</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Marmottes</th>
+						<td>8</td>
+						<td>6</td>
+						<td>1</td>
+						<td>1</td>
+						<td>19</td>
+					</tr>
+					<tr>
+						<th>Lions</th>
+						<td>8</td>
+						<td>4</td>
+						<td>2</td>
+						<td>2</td>
+						<td>14</td>
+					</tr>
+					<tr>
+						<th>Carcajous</th>
+						<td>8</td>
+						<td>3</td>
+						<td>4</td>
+						<td>1</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<th>Blaireaux</th>
+						<td>8</td>
+						<td>1</td>
+						<td>7</td>
+						<td>0</td>
+						<td>3</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<h2>Recherche de matchs</h2>
+		<div>
+			<form method="get" action="https://www.w3schools.com/action_page.php" target="_blank">
+				
+				<input type="radio" id="domicile" name="lieu" value="domicile" checked="checked" />
+				<label for="domicile">À domicile</label>
+				<input type="radio" id="etranger" name="lieu" value="etranger" />
+				<label for="etranger">À l'étranger</label>
+				<br />
+				
+				<label for="equipe">Equipe</label>
+				<br />
+				<input type="text" id="equipe" name="equipe" placeholder="nom de l'équipe" />
+				<br />
+
+				<input type="submit" value="Recherchez" />
+			</form>
+		</div>
+	</div>
+	<div>
+		<h3>Fait par ....Inscrivez vos noms ici.....</h3>
+		<h3>Validation
+			<a id="validateur" href="https://validator.w3.org/#validate_by_upload" target="_blank">
+				<img src="../images/w3c.png" alt="validation" height="40" />
+			</a>
+		</h3>
+	</div>
+</body>
+</html>
