@@ -25,7 +25,16 @@ function afficherItemsMenu($tableau) {
 	$longueur = count($tableau);
 
   	for ($i=0; $i < $longueur; $i++) { 
-  		explode(";", $tableau[$i]));
+  		$a = explode(";", $tableau[$i]);
+  		if($a[2]=="actif"){
+  			echo "<div class='menu-item menu-item-selectionne'>";
+  		} else {
+  			echo "<div class='menu-item'>";
+  		}
+  		echo "<a href='".$a[1]."'>";
+  		echo $a[0];
+  		echo "</a>";
+  		echo "</div> ";
   	}
   
   // Jusqu'ici
@@ -45,13 +54,28 @@ function afficherClassement($tableau){
 	echo "</thead>";
 	echo "<tbody>";
 	// ***************** À compléter cette partie (avec ue boucle obligatoirement) *****************************
-	
+	$long = count($tableau);
+
+	for ($j=0; $j < $long; $j++) { 
+		echo "<tr>";
+		echo "<th>";
+		echo "<img src='../images/".$tableau[$j]->getNom().".png' height='40px' />";
+		echo "<br />";
+		echo "<p> ".$tableau[$j]->getNom()." </p>";
+		echo "</th>";
+		echo "<td>";
+		echo $tableau[$j]->calculerMatchsJoues();
+		echo "</td>";
+		echo "<td> ".$tableau[$j]->getVictoires()." </td>";
+		echo "<td> ".$tableau[$j]->getDefaites()." </td>";
+		echo "<td> ".$tableau[$j]->getNulles()." </td>";
+		echo "<td> ".$tableau[$j]->calculerPoints()." </td>";
+		echo "</tr>";
+	}
 	
 	
 	// ... fin de la boucle
 	echo "</tbody>";
 	echo "</table>";
 }
-
-afficherItemsMenu($tabItemsMenu);
 ?>

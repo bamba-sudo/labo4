@@ -30,6 +30,7 @@ body {
 }
 a {
 	outline:0;
+	text-decoration: none;
 }
 /**************** Classes utilisataires (à ne pas modifier) *******************************/
 .indentation{

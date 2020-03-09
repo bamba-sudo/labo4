@@ -29,6 +29,9 @@
 				"Impact;https://www.impactmontreal.com;non-actif"
 			];	
 			//================== À compléter ==============================
+			include "fonctions/fonctions_affichage.php";
+
+			echo afficherItemsMenu($tabItemsMenu);
 			
 		?>
 	</div>
@@ -49,7 +52,7 @@
 				];
 				//================== À compléter ==============================
 
-			
+				echo afficherClassement($tabEquipe);
 			
 			?>	
 				
